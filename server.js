@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors')
-const dbConfig = require('./dbConfig')
+const dbConfig = require('./dbconfig')
 const welcomeRouter = require('./routers/welcome')
 const listingsRouter = require('./routers/listings')
 
