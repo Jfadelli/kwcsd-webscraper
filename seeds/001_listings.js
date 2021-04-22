@@ -5,7 +5,8 @@ exports.seed = function (knex) {
     .then(function () {
       // Inserts seed entries
       return knex('listings').insert([
-        { id: 1, address: '6969 Home Street', img: "null", link: "null", price: 100, description: "it's on the sidewalk" },
+        
+        {  },
 
       ]);
     });
