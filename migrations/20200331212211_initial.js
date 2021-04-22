@@ -4,7 +4,7 @@ exports.up = async function (knex) {
         tbl.increments()
         tbl.string('img')
         tbl.string('address')
-        tbl.string('link').unique()
+        tbl.string('link') //.unique()
         tbl.integer('price')
         tbl.string('description')
     })
