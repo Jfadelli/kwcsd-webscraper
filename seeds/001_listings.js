@@ -5,9 +5,7 @@ exports.seed = function (knex) {
     .then(function () {
       // Inserts seed entries
       return knex('listings').insert([
-        
-        {  },
-
+{}
       ]);
     });
 };
