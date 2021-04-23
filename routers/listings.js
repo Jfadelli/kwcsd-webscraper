@@ -23,4 +23,14 @@ router.post('/', async (req, res, next) => {
     }
 })
 
+router.delete('/:id', async (req,res,next)=> {
+    try {
+        const payload = req.body
+        res.json(await listingModel.delListing(payload))
+    }
+    catch (err){
+        next(err)
+    }
+})
+
 module.exports = router
